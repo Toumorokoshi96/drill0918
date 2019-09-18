@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'tweets#index'
+  get '/index', to: 'tweets#index'
+  get '/show', to: 'tweets#new'
+  get '/create', to: 'tweets#create'
 end
